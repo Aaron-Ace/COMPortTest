@@ -31,31 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -68,16 +43,51 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ContentBox = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Clear = new System.Windows.Forms.Button();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.Save = new System.Windows.Forms.Button();
             this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.Scan = new System.Windows.Forms.Button();
             this.Test = new System.Windows.Forms.Button();
+            this.ContentBox = new System.Windows.Forms.TextBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -90,11 +100,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox24);
+            this.groupBox1.Controls.Add(this.textBox23);
+            this.groupBox1.Controls.Add(this.textBox22);
+            this.groupBox1.Controls.Add(this.textBox21);
+            this.groupBox1.Controls.Add(this.textBox20);
+            this.groupBox1.Controls.Add(this.textBox19);
+            this.groupBox1.Controls.Add(this.textBox18);
+            this.groupBox1.Controls.Add(this.textBox17);
+            this.groupBox1.Controls.Add(this.textBox16);
+            this.groupBox1.Controls.Add(this.textBox15);
+            this.groupBox1.Controls.Add(this.textBox14);
+            this.groupBox1.Controls.Add(this.textBox13);
             this.groupBox1.Controls.Add(this.pictureBox12);
             this.groupBox1.Controls.Add(this.pictureBox11);
             this.groupBox1.Controls.Add(this.pictureBox10);
@@ -137,250 +160,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "COM PORT";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.Clear);
-            this.groupBox2.Controls.Add(this.pictureBox13);
-            this.groupBox2.Controls.Add(this.Save);
-            this.groupBox2.Controls.Add(this.checkBox13);
-            this.groupBox2.Controls.Add(this.Scan);
-            this.groupBox2.Controls.Add(this.Test);
-            this.groupBox2.Controls.Add(this.ContentBox);
-            this.groupBox2.Location = new System.Drawing.Point(13, 368);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(546, 245);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "CONTENT";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox1.Location = new System.Drawing.Point(22, 25);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(46, 21);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "#1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox2.Location = new System.Drawing.Point(22, 51);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(46, 21);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "#2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox3.Location = new System.Drawing.Point(22, 77);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(46, 21);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "#3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox4.Location = new System.Drawing.Point(22, 103);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(46, 21);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "#4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox5.Location = new System.Drawing.Point(22, 129);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(46, 21);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "#5";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox6.Location = new System.Drawing.Point(22, 155);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(46, 21);
-            this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "#6";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox7.Location = new System.Drawing.Point(22, 181);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(46, 21);
-            this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "#7";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox8.Location = new System.Drawing.Point(22, 207);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(46, 21);
-            this.checkBox8.TabIndex = 7;
-            this.checkBox8.Text = "#8";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox9.Location = new System.Drawing.Point(22, 233);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(46, 21);
-            this.checkBox9.TabIndex = 8;
-            this.checkBox9.Text = "#9";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox10.Location = new System.Drawing.Point(22, 259);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(54, 21);
-            this.checkBox10.TabIndex = 9;
-            this.checkBox10.Text = "#10";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox11.Location = new System.Drawing.Point(22, 285);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(54, 21);
-            this.checkBox11.TabIndex = 10;
-            this.checkBox11.Text = "#11";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox12.Location = new System.Drawing.Point(22, 311);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(54, 21);
-            this.checkBox12.TabIndex = 11;
-            this.checkBox12.Text = "#12";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox1.Location = new System.Drawing.Point(78, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(373, 27);
-            this.textBox1.TabIndex = 12;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox2.Location = new System.Drawing.Point(78, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(373, 27);
-            this.textBox2.TabIndex = 13;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox3.Location = new System.Drawing.Point(78, 74);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(373, 27);
-            this.textBox3.TabIndex = 14;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox4.Location = new System.Drawing.Point(78, 100);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(373, 27);
-            this.textBox4.TabIndex = 15;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox5.Location = new System.Drawing.Point(78, 126);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(373, 27);
-            this.textBox5.TabIndex = 16;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox6.Location = new System.Drawing.Point(78, 152);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(373, 27);
-            this.textBox6.TabIndex = 17;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox7.Location = new System.Drawing.Point(78, 178);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(373, 27);
-            this.textBox7.TabIndex = 18;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox8.Location = new System.Drawing.Point(78, 204);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(373, 27);
-            this.textBox8.TabIndex = 19;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox9.Location = new System.Drawing.Point(78, 230);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(373, 27);
-            this.textBox9.TabIndex = 20;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox10.Location = new System.Drawing.Point(78, 256);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(373, 27);
-            this.textBox10.TabIndex = 21;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox11.Location = new System.Drawing.Point(78, 282);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(373, 27);
-            this.textBox11.TabIndex = 22;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox12.Location = new System.Drawing.Point(78, 308);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(373, 27);
-            this.textBox12.TabIndex = 23;
             // 
             // pictureBox12
             // 
@@ -490,22 +269,270 @@
             this.pictureBox1.TabIndex = 47;
             this.pictureBox1.TabStop = false;
             // 
-            // ContentBox
+            // textBox12
             // 
-            this.ContentBox.Location = new System.Drawing.Point(22, 24);
-            this.ContentBox.Multiline = true;
-            this.ContentBox.Name = "ContentBox";
-            this.ContentBox.Size = new System.Drawing.Size(429, 213);
-            this.ContentBox.TabIndex = 0;
+            this.textBox12.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox12.Location = new System.Drawing.Point(78, 308);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(373, 27);
+            this.textBox12.TabIndex = 23;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox11.Location = new System.Drawing.Point(78, 282);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(373, 27);
+            this.textBox11.TabIndex = 22;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox10.Location = new System.Drawing.Point(78, 256);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(373, 27);
+            this.textBox10.TabIndex = 21;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox9.Location = new System.Drawing.Point(78, 230);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(373, 27);
+            this.textBox9.TabIndex = 20;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox8.Location = new System.Drawing.Point(78, 204);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(373, 27);
+            this.textBox8.TabIndex = 19;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox7.Location = new System.Drawing.Point(78, 178);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(373, 27);
+            this.textBox7.TabIndex = 18;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox6.Location = new System.Drawing.Point(78, 152);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(373, 27);
+            this.textBox6.TabIndex = 17;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox5.Location = new System.Drawing.Point(78, 126);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(373, 27);
+            this.textBox5.TabIndex = 16;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox4.Location = new System.Drawing.Point(78, 100);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(373, 27);
+            this.textBox4.TabIndex = 15;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox3.Location = new System.Drawing.Point(78, 74);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(373, 27);
+            this.textBox3.TabIndex = 14;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox2.Location = new System.Drawing.Point(78, 48);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(373, 27);
+            this.textBox2.TabIndex = 13;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox1.Location = new System.Drawing.Point(78, 22);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(373, 27);
+            this.textBox1.TabIndex = 12;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox12.Location = new System.Drawing.Point(22, 311);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(54, 21);
+            this.checkBox12.TabIndex = 11;
+            this.checkBox12.Text = "#12";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox11.Location = new System.Drawing.Point(22, 285);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(54, 21);
+            this.checkBox11.TabIndex = 10;
+            this.checkBox11.Text = "#11";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox10.Location = new System.Drawing.Point(22, 259);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(54, 21);
+            this.checkBox10.TabIndex = 9;
+            this.checkBox10.Text = "#10";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox9.Location = new System.Drawing.Point(22, 233);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(46, 21);
+            this.checkBox9.TabIndex = 8;
+            this.checkBox9.Text = "#9";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox8.Location = new System.Drawing.Point(22, 207);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(46, 21);
+            this.checkBox8.TabIndex = 7;
+            this.checkBox8.Text = "#8";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox7.Location = new System.Drawing.Point(22, 181);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(46, 21);
+            this.checkBox7.TabIndex = 6;
+            this.checkBox7.Text = "#7";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox6.Location = new System.Drawing.Point(22, 155);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(46, 21);
+            this.checkBox6.TabIndex = 5;
+            this.checkBox6.Text = "#6";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox5.Location = new System.Drawing.Point(22, 129);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(46, 21);
+            this.checkBox5.TabIndex = 4;
+            this.checkBox5.Text = "#5";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox4.Location = new System.Drawing.Point(22, 103);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(46, 21);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Text = "#4";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox3.Location = new System.Drawing.Point(22, 77);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(46, 21);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "#3";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox2.Location = new System.Drawing.Point(22, 51);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(46, 21);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "#2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.checkBox1.Location = new System.Drawing.Point(22, 25);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(46, 21);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "#1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.Clear);
+            this.groupBox2.Controls.Add(this.pictureBox13);
+            this.groupBox2.Controls.Add(this.Save);
+            this.groupBox2.Controls.Add(this.checkBox13);
+            this.groupBox2.Controls.Add(this.Test);
+            this.groupBox2.Controls.Add(this.ContentBox);
+            this.groupBox2.Location = new System.Drawing.Point(13, 368);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(546, 245);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "CONTENT";
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(467, 95);
+            this.Clear.Location = new System.Drawing.Point(467, 139);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(58, 26);
             this.Clear.TabIndex = 66;
             this.Clear.Text = "Clear";
             this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // pictureBox13
             // 
@@ -519,12 +546,13 @@
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(466, 58);
+            this.Save.Location = new System.Drawing.Point(466, 102);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(59, 26);
             this.Save.TabIndex = 64;
             this.Save.Text = "Save";
             this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // checkBox13
             // 
@@ -536,23 +564,119 @@
             this.checkBox13.Text = "AUTO";
             this.checkBox13.UseVisualStyleBackColor = true;
             // 
-            // Scan
-            // 
-            this.Scan.Location = new System.Drawing.Point(466, 130);
-            this.Scan.Name = "Scan";
-            this.Scan.Size = new System.Drawing.Size(59, 26);
-            this.Scan.TabIndex = 62;
-            this.Scan.Text = "Scan";
-            this.Scan.UseVisualStyleBackColor = true;
-            // 
             // Test
             // 
-            this.Test.Location = new System.Drawing.Point(466, 165);
+            this.Test.Location = new System.Drawing.Point(466, 174);
             this.Test.Name = "Test";
             this.Test.Size = new System.Drawing.Size(58, 26);
             this.Test.TabIndex = 61;
             this.Test.Text = "Test";
             this.Test.UseVisualStyleBackColor = true;
+            this.Test.Click += new System.EventHandler(this.Test_Click);
+            // 
+            // ContentBox
+            // 
+            this.ContentBox.Location = new System.Drawing.Point(22, 24);
+            this.ContentBox.Multiline = true;
+            this.ContentBox.Name = "ContentBox";
+            this.ContentBox.Size = new System.Drawing.Size(429, 213);
+            this.ContentBox.TabIndex = 0;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox13.Location = new System.Drawing.Point(351, 22);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(100, 27);
+            this.textBox13.TabIndex = 59;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox14.Location = new System.Drawing.Point(351, 48);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(100, 27);
+            this.textBox14.TabIndex = 60;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox15.Location = new System.Drawing.Point(351, 74);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(100, 27);
+            this.textBox15.TabIndex = 61;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox16.Location = new System.Drawing.Point(351, 100);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(100, 27);
+            this.textBox16.TabIndex = 62;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox17.Location = new System.Drawing.Point(351, 126);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(100, 27);
+            this.textBox17.TabIndex = 63;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox18.Location = new System.Drawing.Point(351, 152);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(100, 27);
+            this.textBox18.TabIndex = 64;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox19.Location = new System.Drawing.Point(351, 178);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(100, 27);
+            this.textBox19.TabIndex = 65;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox20.Location = new System.Drawing.Point(351, 204);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(100, 27);
+            this.textBox20.TabIndex = 66;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox21.Location = new System.Drawing.Point(351, 230);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(100, 27);
+            this.textBox21.TabIndex = 67;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox22.Location = new System.Drawing.Point(351, 256);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(100, 27);
+            this.textBox22.TabIndex = 68;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox23.Location = new System.Drawing.Point(351, 282);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(100, 27);
+            this.textBox23.TabIndex = 69;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.textBox24.Location = new System.Drawing.Point(351, 308);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(100, 27);
+            this.textBox24.TabIndex = 70;
             // 
             // Form1
             // 
@@ -563,10 +687,10 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -579,6 +703,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
 
@@ -628,10 +754,21 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Button Save;
         private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.Button Scan;
         private System.Windows.Forms.Button Test;
         private System.Windows.Forms.TextBox ContentBox;
         private System.IO.Ports.SerialPort serialPort1;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox13;
     }
 }
 
