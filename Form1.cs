@@ -23,7 +23,15 @@ namespace COMPortTest
         public Form1()
         {
             InitializeComponent();
+            //serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort1_DataReceived);
         }
+
+        void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            
+            String data = serialPort1.ReadLine();
+            //Console.Write("datareceived: " + data);
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -110,6 +118,10 @@ namespace COMPortTest
         {
             ContentBox.AppendText("   [Test Start]\r\n");
 
+            //add Time
+            string date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            ContentBox.AppendText("     Time :" + date + "\r\n");
+
             //Test whether checkBox check or not
             int[] CheckBoxBool = new int[13];
             if (checkBox1.Checked)  { CheckBoxBool[1] = 1;  } else { CheckBoxBool[1]  = 0; }
@@ -141,18 +153,18 @@ namespace COMPortTest
                     switch (i)
                     {
 
-                        case 1: textBox13.Text = COMSendReceiveMessageCheck(textBox1.Text.ToString()).ToString(); str = textBox13.Text.ToString(); if (str == "0") { test = true; } break;
-                        case 2: textBox14.Text = COMSendReceiveMessageCheck(textBox2.Text.ToString()).ToString(); str = textBox14.Text.ToString(); if (str == "0") { test = true; } break;
-                        case 3: textBox15.Text = COMSendReceiveMessageCheck(textBox3.Text.ToString()).ToString(); str = textBox15.Text.ToString(); if (str == "0") { test = true; } break;
-                        case 4: textBox16.Text = COMSendReceiveMessageCheck(textBox4.Text.ToString()).ToString(); str = textBox16.Text.ToString(); if (str == "0") { test = true; } break;
-                        case 5: textBox17.Text = COMSendReceiveMessageCheck(textBox5.Text.ToString()).ToString(); str = textBox17.Text.ToString(); if (str == "0") { test = true; } break;
-                        case 6: textBox18.Text = COMSendReceiveMessageCheck(textBox6.Text.ToString()).ToString(); str = textBox18.Text.ToString(); if (str == "0") { test = true; } break;
-                        case 7: textBox19.Text = COMSendReceiveMessageCheck(textBox7.Text.ToString()).ToString(); str = textBox19.Text.ToString(); if (str == "0") { test = true; } break;
-                        case 8: textBox20.Text = COMSendReceiveMessageCheck(textBox8.Text.ToString()).ToString(); str = textBox20.Text.ToString(); if (str == "0") { test = true; } break;
-                        case 9: textBox21.Text = COMSendReceiveMessageCheck(textBox9.Text.ToString()).ToString(); str = textBox21.Text.ToString(); if (str == "0") { test = true; } break;
-                        case 10:textBox22.Text = COMSendReceiveMessageCheck(textBox10.Text.ToString()).ToString(); str = textBox22.Text.ToString(); if (str == "0") { test = true; } break;
-                        case 11:textBox23.Text = COMSendReceiveMessageCheck(textBox11.Text.ToString()).ToString(); str = textBox23.Text.ToString(); if (str == "0") { test = true; } break;
-                        case 12:textBox24.Text = COMSendReceiveMessageCheck(textBox12.Text.ToString()).ToString(); str = textBox24.Text.ToString(); if (str == "0") { test = true; } break;
+                        case 1: textBox13.Text = COMSendReceiveMessageCheck(textBox1.Text.ToString()).ToString(); str = textBox13.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 2: textBox14.Text = COMSendReceiveMessageCheck(textBox2.Text.ToString()).ToString(); str = textBox14.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 3: textBox15.Text = COMSendReceiveMessageCheck(textBox3.Text.ToString()).ToString(); str = textBox15.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 4: textBox16.Text = COMSendReceiveMessageCheck(textBox4.Text.ToString()).ToString(); str = textBox16.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 5: textBox17.Text = COMSendReceiveMessageCheck(textBox5.Text.ToString()).ToString(); str = textBox17.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 6: textBox18.Text = COMSendReceiveMessageCheck(textBox6.Text.ToString()).ToString(); str = textBox18.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 7: textBox19.Text = COMSendReceiveMessageCheck(textBox7.Text.ToString()).ToString(); str = textBox19.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 8: textBox20.Text = COMSendReceiveMessageCheck(textBox8.Text.ToString()).ToString(); str = textBox20.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 9: textBox21.Text = COMSendReceiveMessageCheck(textBox9.Text.ToString()).ToString(); str = textBox21.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 10: textBox22.Text = COMSendReceiveMessageCheck(textBox10.Text.ToString()).ToString(); str = textBox22.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 11: textBox23.Text = COMSendReceiveMessageCheck(textBox11.Text.ToString()).ToString(); str = textBox23.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 12: textBox24.Text = COMSendReceiveMessageCheck(textBox12.Text.ToString()).ToString(); str = textBox24.Text.ToString(); if (str == "Match") { test = true; } break;
                     }
 
                     //Test為是 更改圖片為成功
@@ -198,29 +210,34 @@ namespace COMPortTest
                 }
             }
 
-
-            //add Time
-            string date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            ContentBox.AppendText("     Time :" + date + "\r\n");
-
             //add COM Port Total Result
             if (flag_testcheck == 0 && GlobalVarable.log_flag == 0)
             {
                 MessageBox.Show("Warning ! Please Check At Least One COM Port !");
+                Test.Enabled = true;
                 //Scan_Click(sender, e);
             }
             else if (GlobalVarable.log_flag == 0)
             {
                 ContentBox.AppendText("     Test  Result ----------------> PASS\r\n");
+                Environment.ExitCode = 0;
             }
             else
             {
                 ContentBox.AppendText("     Test  Result ----------------> FAIL\r\n");
+                Environment.ExitCode = 1;
             }
+
             ContentBox.AppendText("   [Test End]\r\n\r\n");
 
             //製作結果檔
             CreateLogfile();
+
+            //自動程式關閉
+            string str1 = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
+            IniFile ini = new IniFile(str1 + "\\SATATest.ini");
+            if (GlobalVarable.log_flag == 0 && ini.Read("AUTO") == "1")
+            { timer1.Start(); timer1_Tick(sender, e); }
             
         }
 
@@ -228,72 +245,63 @@ namespace COMPortTest
         {
             if (serialPort1.IsOpen)
                 serialPort1.Close();
+            Environment.ExitCode = 0;
         }
 
         public string COMSendReceiveMessageCheck(string name)
         {
-            SerialPort serialPort1 = new SerialPort();
+            serialPort1.Close();
             serialPort1.PortName = name;
             serialPort1.Parity = Parity.None;
             serialPort1.BaudRate = 9600;
             serialPort1.DataBits = 8;
             serialPort1.StopBits = StopBits.One;
-            /*if (serialPort1.IsOpen)
+
+            try
             {
-                serialPort1.Close();
-                serialPort1.Dispose();
+                serialPort1.Open();
             }
-            
-            byte[] bytesToSend = new byte[6] { 0xD0,0xF2,0xFF,0x00,0x06,0xC7 };  //$D0 $F2 $FF $00 $06 $C7
-            serialPort1.Open();
-            serialPort1.Write(bytesToSend, 0, bytesToSend.Length);
+            catch (Exception)
+            {
+                ContentBox.AppendText("     ->"+serialPort1.PortName.ToString() + " \r\n     Can Not Be Opened\r\n");
+                ContentBox.AppendText("     Result: Fail\r\n");
+            }
 
-            serialPort1.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
-            serialPort1.Close();
-            serialPort1.Dispose();
-
-            serialPort1.Open();
-            ContentBox.AppendText(serialPort1.ReadExisting());
-            serialPort1.Close();*/
-            serialPort1.Open();
             if (serialPort1.IsOpen)
             {
 
-                byte[] bytesToSend = new byte[6] { 0xD0, 0xF2, 0xFF, 0x00, 0x06, 0xC7 };  //$D0 $F2 $FF $00 $06 $C7
-                serialPort1.Write(bytesToSend, 0, bytesToSend.Length);
-                //serialPort1.Write("`1234567890-=");
-                if (serialPort1.ReadExisting().ToString() == "")
-                { return "0"; }
-                else { return serialPort1.ReadExisting().ToString(); }
+                try//~!@#$%^&*()_+ 
+                {
+
+                    serialPort1.Write("~!@#$%^&*()_+");
+                    ContentBox.AppendText("     ->" + serialPort1.PortName + " Test\r\n");
+                    ContentBox.AppendText("     Sleep 1 sec...\r\n");
+                    Thread.Sleep(1000);
+                    textBox25.Text = serialPort1.ReadExisting();
+                    if (textBox25.Text == "~!@#$%^&*()_+")
+                    {
+                        ContentBox.AppendText("     Result: Pass\r\n");
+                        return "Match";
+                        
+                    }
+                    else 
+                    {
+                        ContentBox.AppendText("     Result: Fail\r\n");
+                        return "Unmatch";
+                        
+                    }
+                }
+                catch { return "SE&RE Failed"; }
+                finally { textBox25.Text = ""; }
             }
-            serialPort1.Close();
-            return "2";
+
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Close();
+            }
+
+            return "Test Failed";
             
-        }
-
-        private static void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
-        {
-            SerialPort port = (SerialPort)sender;
-
-            int bytes = port.BytesToRead;
-            byte[] buffer = new byte[bytes];
-
-            if (port.BytesToRead > 1)
-            {
-
-                port.Read(buffer, 0, bytes);
-            }
-
-            foreach (byte item in buffer)
-            {
-                Console.WriteLine(item);
-                Console.ReadKey();
-            }
-
-            //string indata = port.ReadExisting();
-            //Console.WriteLine("Data received");
-            //Console.WriteLine(indata);
-            //Console.ReadKey();
         }
 
         public class IniFile   // revision 11
@@ -444,7 +452,76 @@ namespace COMPortTest
         private void checkBox12_CheckedChanged(object sender, EventArgs e)
         { if (checkBox12.Checked == true) { if (textBox12.Text.ToString() == "") { checkBox12.Checked = false; } } }
 
+        private void checkBox13_CheckedChanged(object sender, EventArgs e)
+        {
+            //Auto Run
 
+            if (checkBox7.Checked) //設置開機自啟動  
+            {
+                string path = Application.ExecutablePath;
+                RegistryKey rk = Registry.LocalMachine;
+                RegistryKey rk2 = rk.CreateSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run");
+                rk2.SetValue("JcShutdown", path);
+                rk2.Close();
+                rk.Close();
+
+                //寫入ini檔為true 
+                string str = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
+                IniFile ini = new IniFile(str + "\\COMPortTest.ini");
+                ini.Write("AUTO", "1");
+                if (checkBox1.Checked == true) { ini.Write("COM1", "1"); } else { ini.Write("COM1", "0"); }
+                if (checkBox2.Checked == true) { ini.Write("COM2", "1"); } else { ini.Write("COM2", "0"); }
+                if (checkBox3.Checked == true) { ini.Write("COM3", "1"); } else { ini.Write("COM3", "0"); }
+                if (checkBox5.Checked == true) { ini.Write("COM4", "1"); } else { ini.Write("COM4", "0"); }
+                if (checkBox4.Checked == true) { ini.Write("COM5", "1"); } else { ini.Write("COM5", "0"); }
+                if (checkBox6.Checked == true) { ini.Write("COM6", "1"); } else { ini.Write("COM6", "0"); }
+                if (checkBox7.Checked == true) { ini.Write("COM7", "1"); } else { ini.Write("COM7", "0"); }
+                if (checkBox8.Checked == true) { ini.Write("COM8", "1"); } else { ini.Write("COM8", "0"); }
+                if (checkBox9.Checked == true) { ini.Write("COM9", "1"); } else { ini.Write("COM9", "0"); }
+                if (checkBox10.Checked == true) { ini.Write("COM10", "1"); } else { ini.Write("COM10", "0"); }
+                if (checkBox11.Checked == true) { ini.Write("COM11", "1"); } else { ini.Write("COM11", "0"); }
+                if (checkBox12.Checked == true) { ini.Write("COM12", "1"); } else { ini.Write("COM12", "0"); }
+
+            }
+            else //取消開機自啟動  
+            {
+                string path = Application.ExecutablePath;
+                RegistryKey rk = Registry.LocalMachine;
+                RegistryKey rk2 = rk.CreateSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run");
+                rk2.DeleteValue("JcShutdown", false);
+                rk2.Close();
+                rk.Close();
+
+                //寫入ini檔為false
+                string str = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
+                IniFile ini = new IniFile(str + "\\COMPortTest.ini");
+                ini.Write("AUTO", "0");
+            }
+        }
+
+        int timeLeft = 1;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (checkBox13.Checked == false)
+            {
+                timeLeft = 1;
+            }
+            else if (timeLeft > 0)
+            {
+                timeLeft = timeLeft - 1;
+            }
+            else
+            {
+                //timer1.Stop();
+                CloseWindow();
+            }
+        }
+
+        public void CloseWindow()
+        {
+
+            Application.Exit();
+        }
 
     }
 }

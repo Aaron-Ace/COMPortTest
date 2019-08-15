@@ -5,3 +5,4 @@ D:\Users\user\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPo
 D:\Users\user\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.csproj.GenerateResource.Cache
 D:\Users\user\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.exe
 D:\Users\user\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.pdb
+D:\Users\user\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.csprojResolveAssemblyReference.cache
