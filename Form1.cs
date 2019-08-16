@@ -29,36 +29,6 @@ namespace COMPortTest
         {
             ContentBox.ScrollBars = ScrollBars.Vertical;
 
-            int Port_count = 0;
-            string[] myPorts = SerialPort.GetPortNames(); //取得所有port的名字
-            foreach (string port in myPorts)  //使用迴圈方式取得所有port的名字
-            {
-                Port_count += 1;
-                if (Port_count <= 12)
-                {
-                    switch (Port_count)
-                    {
-
-                        case 1: textBox1.AppendText(port); break;
-                        case 2: textBox2.AppendText(port); break;
-                        case 3: textBox3.AppendText(port); break;
-                        case 4: textBox4.AppendText(port); break;
-                        case 5: textBox5.AppendText(port); break;
-                        case 6: textBox6.AppendText(port); break;
-                        case 7: textBox7.AppendText(port); break;
-                        case 8: textBox8.AppendText(port); break;
-                        case 9: textBox9.AppendText(port); break;
-                        case 10: textBox10.AppendText(port); break;
-                        case 11: textBox11.AppendText(port); break;
-                        case 12: textBox12.AppendText(port); break;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Warning ! COM Port Out Of Limit");
-                }
-            }
-
             string str = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
             IniFile ini = new IniFile(str + "\\COMPortTest.ini");
             if (ini.Read("COM1")  == "1") { checkBox1.Checked =  true; } else { checkBox1.Checked  = false; }
@@ -146,18 +116,18 @@ namespace COMPortTest
                     switch (i)
                     {
 
-                        case 1:  textBox13.Text = COMSendReceiveMessageCheck(textBox1.Text.ToString()).ToString(); str = textBox13.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 2:  textBox14.Text = COMSendReceiveMessageCheck(textBox2.Text.ToString()).ToString(); str = textBox14.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 3:  textBox15.Text = COMSendReceiveMessageCheck(textBox3.Text.ToString()).ToString(); str = textBox15.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 4:  textBox16.Text = COMSendReceiveMessageCheck(textBox4.Text.ToString()).ToString(); str = textBox16.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 5:  textBox17.Text = COMSendReceiveMessageCheck(textBox5.Text.ToString()).ToString(); str = textBox17.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 6:  textBox18.Text = COMSendReceiveMessageCheck(textBox6.Text.ToString()).ToString(); str = textBox18.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 7:  textBox19.Text = COMSendReceiveMessageCheck(textBox7.Text.ToString()).ToString(); str = textBox19.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 8:  textBox20.Text = COMSendReceiveMessageCheck(textBox8.Text.ToString()).ToString(); str = textBox20.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 9:  textBox21.Text = COMSendReceiveMessageCheck(textBox9.Text.ToString()).ToString(); str = textBox21.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 10: textBox22.Text = COMSendReceiveMessageCheck(textBox10.Text.ToString()).ToString(); str = textBox22.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 11: textBox23.Text = COMSendReceiveMessageCheck(textBox11.Text.ToString()).ToString(); str = textBox23.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 12: textBox24.Text = COMSendReceiveMessageCheck(textBox12.Text.ToString()).ToString(); str = textBox24.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 1:  textBox13.Text = COMSendReceiveMessageCheck("COM1").ToString(); str = textBox13.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 2:  textBox14.Text = COMSendReceiveMessageCheck("COM2").ToString(); str = textBox14.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 3:  textBox15.Text = COMSendReceiveMessageCheck("COM3").ToString(); str = textBox15.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 4:  textBox16.Text = COMSendReceiveMessageCheck("COM4").ToString(); str = textBox16.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 5:  textBox17.Text = COMSendReceiveMessageCheck("COM5").ToString(); str = textBox17.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 6:  textBox18.Text = COMSendReceiveMessageCheck("COM6").ToString(); str = textBox18.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 7:  textBox19.Text = COMSendReceiveMessageCheck("COM7").ToString(); str = textBox19.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 8:  textBox20.Text = COMSendReceiveMessageCheck("COM8").ToString(); str = textBox20.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 9:  textBox21.Text = COMSendReceiveMessageCheck("COM9").ToString(); str = textBox21.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 10: textBox22.Text = COMSendReceiveMessageCheck("COM10").ToString(); str = textBox22.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 11: textBox23.Text = COMSendReceiveMessageCheck("COM11").ToString(); str = textBox23.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 12: textBox24.Text = COMSendReceiveMessageCheck("COM12").ToString(); str = textBox24.Text.ToString(); if (str == "Match") { test = true; } break;
                     }
 
                     //Test為是 更改圖片為成功
@@ -410,41 +380,6 @@ namespace COMPortTest
             pictureBox12.Image = Properties.Resources.bmp00002;
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {if (checkBox1.Checked == true){if (textBox1.Text.ToString() == "") { checkBox1.Checked = false; }}}
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        { if (checkBox2.Checked == true) { if (textBox2.Text.ToString() == "") { checkBox2.Checked = false; } } }
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        { if (checkBox3.Checked == true) { if (textBox3.Text.ToString() == "") { checkBox3.Checked = false; } } }
-
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
-        { if (checkBox4.Checked == true) { if (textBox4.Text.ToString() == "") { checkBox4.Checked = false; } } }
-
-        private void checkBox5_CheckedChanged(object sender, EventArgs e)
-        { if (checkBox5.Checked == true) { if (textBox5.Text.ToString() == "") { checkBox5.Checked = false; } } }
-
-        private void checkBox6_CheckedChanged(object sender, EventArgs e)
-        { if (checkBox6.Checked == true) { if (textBox6.Text.ToString() == "") { checkBox6.Checked = false; } } }
-
-        private void checkBox7_CheckedChanged(object sender, EventArgs e)
-        { if (checkBox7.Checked == true) { if (textBox7.Text.ToString() == "") { checkBox7.Checked = false; } } }
-
-        private void checkBox8_CheckedChanged(object sender, EventArgs e)
-        { if (checkBox8.Checked == true) { if (textBox8.Text.ToString() == "") { checkBox8.Checked = false; } } }
-
-        private void checkBox9_CheckedChanged(object sender, EventArgs e)
-        { if (checkBox9.Checked == true) { if (textBox9.Text.ToString() == "") { checkBox9.Checked = false; } } }
-
-        private void checkBox10_CheckedChanged(object sender, EventArgs e)
-        { if (checkBox10.Checked == true) { if (textBox10.Text.ToString() == "") { checkBox10.Checked = false; } } }
-
-        private void checkBox11_CheckedChanged(object sender, EventArgs e)
-        { if (checkBox11.Checked == true) { if (textBox11.Text.ToString() == "") { checkBox11.Checked = false; } } }
-
-        private void checkBox12_CheckedChanged(object sender, EventArgs e)
-        { if (checkBox12.Checked == true) { if (textBox12.Text.ToString() == "") { checkBox12.Checked = false; } } }
 
         private void checkBox13_CheckedChanged(object sender, EventArgs e)
         {

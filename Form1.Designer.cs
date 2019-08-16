@@ -158,7 +158,7 @@
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Location = new System.Drawing.Point(13, 7);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(546, 355);
+            this.groupBox1.Size = new System.Drawing.Size(744, 191);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "COM PORT";
@@ -166,7 +166,7 @@
             // textBox24
             // 
             this.textBox24.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox24.Location = new System.Drawing.Point(351, 308);
+            this.textBox24.Location = new System.Drawing.Point(554, 154);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(100, 27);
             this.textBox24.TabIndex = 70;
@@ -174,7 +174,7 @@
             // textBox23
             // 
             this.textBox23.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox23.Location = new System.Drawing.Point(351, 282);
+            this.textBox23.Location = new System.Drawing.Point(554, 128);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(100, 27);
             this.textBox23.TabIndex = 69;
@@ -182,7 +182,7 @@
             // textBox22
             // 
             this.textBox22.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox22.Location = new System.Drawing.Point(351, 256);
+            this.textBox22.Location = new System.Drawing.Point(554, 102);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(100, 27);
             this.textBox22.TabIndex = 68;
@@ -190,7 +190,7 @@
             // textBox21
             // 
             this.textBox21.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox21.Location = new System.Drawing.Point(351, 230);
+            this.textBox21.Location = new System.Drawing.Point(554, 76);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(100, 27);
             this.textBox21.TabIndex = 67;
@@ -198,7 +198,7 @@
             // textBox20
             // 
             this.textBox20.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox20.Location = new System.Drawing.Point(351, 204);
+            this.textBox20.Location = new System.Drawing.Point(554, 50);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(100, 27);
             this.textBox20.TabIndex = 66;
@@ -206,7 +206,7 @@
             // textBox19
             // 
             this.textBox19.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox19.Location = new System.Drawing.Point(351, 178);
+            this.textBox19.Location = new System.Drawing.Point(554, 24);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(100, 27);
             this.textBox19.TabIndex = 65;
@@ -214,7 +214,7 @@
             // textBox18
             // 
             this.textBox18.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox18.Location = new System.Drawing.Point(351, 152);
+            this.textBox18.Location = new System.Drawing.Point(192, 153);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(100, 27);
             this.textBox18.TabIndex = 64;
@@ -222,7 +222,7 @@
             // textBox17
             // 
             this.textBox17.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox17.Location = new System.Drawing.Point(351, 126);
+            this.textBox17.Location = new System.Drawing.Point(192, 127);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(100, 27);
             this.textBox17.TabIndex = 63;
@@ -230,7 +230,7 @@
             // textBox16
             // 
             this.textBox16.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox16.Location = new System.Drawing.Point(351, 100);
+            this.textBox16.Location = new System.Drawing.Point(192, 101);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(100, 27);
             this.textBox16.TabIndex = 62;
@@ -238,7 +238,7 @@
             // textBox15
             // 
             this.textBox15.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox15.Location = new System.Drawing.Point(351, 74);
+            this.textBox15.Location = new System.Drawing.Point(192, 75);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(100, 27);
             this.textBox15.TabIndex = 61;
@@ -246,7 +246,7 @@
             // textBox14
             // 
             this.textBox14.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox14.Location = new System.Drawing.Point(351, 48);
+            this.textBox14.Location = new System.Drawing.Point(192, 49);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(100, 27);
             this.textBox14.TabIndex = 60;
@@ -254,7 +254,7 @@
             // textBox13
             // 
             this.textBox13.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox13.Location = new System.Drawing.Point(351, 22);
+            this.textBox13.Location = new System.Drawing.Point(192, 23);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(100, 27);
             this.textBox13.TabIndex = 59;
@@ -262,7 +262,7 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(467, 307);
+            this.pictureBox12.Location = new System.Drawing.Point(670, 153);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(56, 27);
             this.pictureBox12.TabIndex = 58;
@@ -271,7 +271,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(467, 281);
+            this.pictureBox11.Location = new System.Drawing.Point(670, 127);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(56, 27);
             this.pictureBox11.TabIndex = 57;
@@ -280,7 +280,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(467, 255);
+            this.pictureBox10.Location = new System.Drawing.Point(670, 101);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(56, 27);
             this.pictureBox10.TabIndex = 56;
@@ -289,7 +289,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(467, 229);
+            this.pictureBox9.Location = new System.Drawing.Point(670, 75);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(56, 27);
             this.pictureBox9.TabIndex = 55;
@@ -298,7 +298,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(467, 203);
+            this.pictureBox8.Location = new System.Drawing.Point(670, 49);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(56, 27);
             this.pictureBox8.TabIndex = 54;
@@ -307,7 +307,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(467, 177);
+            this.pictureBox7.Location = new System.Drawing.Point(670, 23);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(56, 27);
             this.pictureBox7.TabIndex = 53;
@@ -316,7 +316,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(467, 151);
+            this.pictureBox6.Location = new System.Drawing.Point(308, 152);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(56, 27);
             this.pictureBox6.TabIndex = 52;
@@ -325,7 +325,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(467, 125);
+            this.pictureBox5.Location = new System.Drawing.Point(308, 126);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(56, 27);
             this.pictureBox5.TabIndex = 51;
@@ -334,7 +334,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(467, 100);
+            this.pictureBox4.Location = new System.Drawing.Point(308, 101);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(56, 26);
             this.pictureBox4.TabIndex = 50;
@@ -343,7 +343,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(467, 74);
+            this.pictureBox3.Location = new System.Drawing.Point(308, 75);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(56, 27);
             this.pictureBox3.TabIndex = 49;
@@ -352,7 +352,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(467, 48);
+            this.pictureBox2.Location = new System.Drawing.Point(308, 49);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(56, 27);
             this.pictureBox2.TabIndex = 48;
@@ -361,7 +361,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(467, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(308, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(56, 27);
             this.pictureBox1.TabIndex = 47;
@@ -370,170 +370,176 @@
             // textBox12
             // 
             this.textBox12.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox12.Location = new System.Drawing.Point(78, 308);
+            this.textBox12.Location = new System.Drawing.Point(479, 154);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(373, 27);
+            this.textBox12.Size = new System.Drawing.Size(175, 27);
             this.textBox12.TabIndex = 23;
+            this.textBox12.Text = "Status:";
             // 
             // textBox11
             // 
             this.textBox11.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox11.Location = new System.Drawing.Point(78, 282);
+            this.textBox11.Location = new System.Drawing.Point(479, 128);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(373, 27);
+            this.textBox11.Size = new System.Drawing.Size(175, 27);
             this.textBox11.TabIndex = 22;
+            this.textBox11.Text = "Status:";
             // 
             // textBox10
             // 
             this.textBox10.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox10.Location = new System.Drawing.Point(78, 256);
+            this.textBox10.Location = new System.Drawing.Point(479, 102);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(373, 27);
+            this.textBox10.Size = new System.Drawing.Size(175, 27);
             this.textBox10.TabIndex = 21;
+            this.textBox10.Text = "Status:";
             // 
             // textBox9
             // 
             this.textBox9.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox9.Location = new System.Drawing.Point(78, 230);
+            this.textBox9.Location = new System.Drawing.Point(479, 76);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(373, 27);
+            this.textBox9.Size = new System.Drawing.Size(175, 27);
             this.textBox9.TabIndex = 20;
+            this.textBox9.Text = "Status:";
             // 
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox8.Location = new System.Drawing.Point(78, 204);
+            this.textBox8.Location = new System.Drawing.Point(479, 50);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(373, 27);
+            this.textBox8.Size = new System.Drawing.Size(175, 27);
             this.textBox8.TabIndex = 19;
+            this.textBox8.Text = "Status:";
             // 
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox7.Location = new System.Drawing.Point(78, 178);
+            this.textBox7.Location = new System.Drawing.Point(479, 24);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(373, 27);
+            this.textBox7.Size = new System.Drawing.Size(175, 27);
             this.textBox7.TabIndex = 18;
+            this.textBox7.Text = "Status:";
             // 
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox6.Location = new System.Drawing.Point(78, 152);
+            this.textBox6.Location = new System.Drawing.Point(114, 153);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(373, 27);
+            this.textBox6.Size = new System.Drawing.Size(178, 27);
             this.textBox6.TabIndex = 17;
+            this.textBox6.Text = "Status:";
             // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox5.Location = new System.Drawing.Point(78, 126);
+            this.textBox5.Location = new System.Drawing.Point(114, 127);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(373, 27);
+            this.textBox5.Size = new System.Drawing.Size(178, 27);
             this.textBox5.TabIndex = 16;
+            this.textBox5.Text = "Status:";
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox4.Location = new System.Drawing.Point(78, 100);
+            this.textBox4.Location = new System.Drawing.Point(114, 101);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(373, 27);
+            this.textBox4.Size = new System.Drawing.Size(178, 27);
             this.textBox4.TabIndex = 15;
+            this.textBox4.Text = "Status:";
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox3.Location = new System.Drawing.Point(78, 74);
+            this.textBox3.Location = new System.Drawing.Point(114, 75);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(373, 27);
+            this.textBox3.Size = new System.Drawing.Size(178, 27);
             this.textBox3.TabIndex = 14;
+            this.textBox3.Text = "Status:";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox2.Location = new System.Drawing.Point(78, 48);
+            this.textBox2.Location = new System.Drawing.Point(114, 49);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(373, 27);
+            this.textBox2.Size = new System.Drawing.Size(178, 27);
             this.textBox2.TabIndex = 13;
+            this.textBox2.Text = "Status:";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.textBox1.Location = new System.Drawing.Point(78, 22);
+            this.textBox1.Location = new System.Drawing.Point(114, 23);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(373, 27);
+            this.textBox1.Size = new System.Drawing.Size(178, 27);
             this.textBox1.TabIndex = 12;
+            this.textBox1.Text = "Status:";
             // 
             // checkBox12
             // 
             this.checkBox12.AutoSize = true;
             this.checkBox12.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox12.Location = new System.Drawing.Point(22, 311);
+            this.checkBox12.Location = new System.Drawing.Point(379, 156);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(54, 21);
+            this.checkBox12.Size = new System.Drawing.Size(91, 21);
             this.checkBox12.TabIndex = 11;
-            this.checkBox12.Text = "#12";
+            this.checkBox12.Text = "#COM12";
             this.checkBox12.UseVisualStyleBackColor = true;
-            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
             // 
             // checkBox11
             // 
             this.checkBox11.AutoSize = true;
             this.checkBox11.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox11.Location = new System.Drawing.Point(22, 285);
+            this.checkBox11.Location = new System.Drawing.Point(379, 130);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(54, 21);
+            this.checkBox11.Size = new System.Drawing.Size(91, 21);
             this.checkBox11.TabIndex = 10;
-            this.checkBox11.Text = "#11";
+            this.checkBox11.Text = "#COM11";
             this.checkBox11.UseVisualStyleBackColor = true;
-            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
             this.checkBox10.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox10.Location = new System.Drawing.Point(22, 259);
+            this.checkBox10.Location = new System.Drawing.Point(379, 104);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(54, 21);
+            this.checkBox10.Size = new System.Drawing.Size(91, 21);
             this.checkBox10.TabIndex = 9;
-            this.checkBox10.Text = "#10";
+            this.checkBox10.Text = "#COM10";
             this.checkBox10.UseVisualStyleBackColor = true;
-            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
             // 
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
             this.checkBox9.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox9.Location = new System.Drawing.Point(22, 233);
+            this.checkBox9.Location = new System.Drawing.Point(379, 78);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(46, 21);
+            this.checkBox9.Size = new System.Drawing.Size(83, 21);
             this.checkBox9.TabIndex = 8;
-            this.checkBox9.Text = "#9";
+            this.checkBox9.Text = "#COM9";
             this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
             this.checkBox8.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox8.Location = new System.Drawing.Point(22, 207);
+            this.checkBox8.Location = new System.Drawing.Point(379, 52);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(46, 21);
+            this.checkBox8.Size = new System.Drawing.Size(83, 21);
             this.checkBox8.TabIndex = 7;
-            this.checkBox8.Text = "#8";
+            this.checkBox8.Text = "#COM8";
             this.checkBox8.UseVisualStyleBackColor = true;
-            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.checkBox7.Location = new System.Drawing.Point(22, 181);
+            this.checkBox7.Location = new System.Drawing.Point(379, 26);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(46, 21);
+            this.checkBox7.Size = new System.Drawing.Size(83, 21);
             this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "#7";
+            this.checkBox7.Text = "#COM7";
             this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // checkBox6
             // 
@@ -541,11 +547,10 @@
             this.checkBox6.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.checkBox6.Location = new System.Drawing.Point(22, 155);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(46, 21);
+            this.checkBox6.Size = new System.Drawing.Size(83, 21);
             this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "#6";
+            this.checkBox6.Text = "#COM6";
             this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -553,11 +558,10 @@
             this.checkBox5.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.checkBox5.Location = new System.Drawing.Point(22, 129);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(46, 21);
+            this.checkBox5.Size = new System.Drawing.Size(83, 21);
             this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "#5";
+            this.checkBox5.Text = "#COM5";
             this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -565,11 +569,10 @@
             this.checkBox4.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.checkBox4.Location = new System.Drawing.Point(22, 103);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(46, 21);
+            this.checkBox4.Size = new System.Drawing.Size(83, 21);
             this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "#4";
+            this.checkBox4.Text = "#COM4";
             this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -577,11 +580,10 @@
             this.checkBox3.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.checkBox3.Location = new System.Drawing.Point(22, 77);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(46, 21);
+            this.checkBox3.Size = new System.Drawing.Size(83, 21);
             this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "#3";
+            this.checkBox3.Text = "#COM3";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -589,11 +591,10 @@
             this.checkBox2.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.checkBox2.Location = new System.Drawing.Point(22, 51);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(46, 21);
+            this.checkBox2.Size = new System.Drawing.Size(83, 21);
             this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "#2";
+            this.checkBox2.Text = "#COM2";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -601,11 +602,10 @@
             this.checkBox1.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.checkBox1.Location = new System.Drawing.Point(22, 25);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(46, 21);
+            this.checkBox1.Size = new System.Drawing.Size(83, 21);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "#1";
+            this.checkBox1.Text = "#COM1";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -616,16 +616,16 @@
             this.groupBox2.Controls.Add(this.Test);
             this.groupBox2.Controls.Add(this.ContentBox);
             this.groupBox2.Controls.Add(this.textBox25);
-            this.groupBox2.Location = new System.Drawing.Point(13, 368);
+            this.groupBox2.Location = new System.Drawing.Point(13, 204);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(546, 245);
+            this.groupBox2.Size = new System.Drawing.Size(744, 245);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CONTENT";
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(467, 136);
+            this.Clear.Location = new System.Drawing.Point(661, 136);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(58, 26);
             this.Clear.TabIndex = 66;
@@ -637,7 +637,7 @@
             // 
             this.pictureBox13.Image = global::COMPortTest.Properties.Resources.bmpLogo;
             this.pictureBox13.InitialImage = null;
-            this.pictureBox13.Location = new System.Drawing.Point(453, 211);
+            this.pictureBox13.Location = new System.Drawing.Point(647, 211);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(87, 28);
             this.pictureBox13.TabIndex = 65;
@@ -645,7 +645,7 @@
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(466, 99);
+            this.Save.Location = new System.Drawing.Point(660, 99);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(59, 26);
             this.Save.TabIndex = 64;
@@ -656,7 +656,7 @@
             // checkBox13
             // 
             this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(467, 24);
+            this.checkBox13.Location = new System.Drawing.Point(661, 24);
             this.checkBox13.Name = "checkBox13";
             this.checkBox13.Size = new System.Drawing.Size(68, 19);
             this.checkBox13.TabIndex = 63;
@@ -666,7 +666,7 @@
             // 
             // Test
             // 
-            this.Test.Location = new System.Drawing.Point(466, 171);
+            this.Test.Location = new System.Drawing.Point(660, 171);
             this.Test.Name = "Test";
             this.Test.Size = new System.Drawing.Size(58, 26);
             this.Test.TabIndex = 61;
@@ -679,7 +679,7 @@
             this.ContentBox.Location = new System.Drawing.Point(22, 24);
             this.ContentBox.Multiline = true;
             this.ContentBox.Name = "ContentBox";
-            this.ContentBox.Size = new System.Drawing.Size(429, 213);
+            this.ContentBox.Size = new System.Drawing.Size(607, 213);
             this.ContentBox.TabIndex = 0;
             // 
             // textBox25
@@ -698,7 +698,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 625);
+            this.ClientSize = new System.Drawing.Size(783, 455);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
