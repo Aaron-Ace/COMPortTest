@@ -86,8 +86,8 @@
             this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.Test = new System.Windows.Forms.Button();
             this.ContentBox = new System.Windows.Forms.TextBox();
-            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.textBox25 = new System.Windows.Forms.TextBox();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -625,7 +625,7 @@
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(467, 139);
+            this.Clear.Location = new System.Drawing.Point(467, 136);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(58, 26);
             this.Clear.TabIndex = 66;
@@ -637,15 +637,15 @@
             // 
             this.pictureBox13.Image = global::COMPortTest.Properties.Resources.bmpLogo;
             this.pictureBox13.InitialImage = null;
-            this.pictureBox13.Location = new System.Drawing.Point(454, 212);
+            this.pictureBox13.Location = new System.Drawing.Point(453, 211);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(88, 25);
+            this.pictureBox13.Size = new System.Drawing.Size(87, 28);
             this.pictureBox13.TabIndex = 65;
             this.pictureBox13.TabStop = false;
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(466, 102);
+            this.Save.Location = new System.Drawing.Point(466, 99);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(59, 26);
             this.Save.TabIndex = 64;
@@ -666,7 +666,7 @@
             // 
             // Test
             // 
-            this.Test.Location = new System.Drawing.Point(466, 174);
+            this.Test.Location = new System.Drawing.Point(466, 171);
             this.Test.Name = "Test";
             this.Test.Size = new System.Drawing.Size(58, 26);
             this.Test.TabIndex = 61;
@@ -691,6 +691,7 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
@@ -701,7 +702,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "COM Port Test[V1.0]";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
