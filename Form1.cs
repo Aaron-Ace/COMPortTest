@@ -236,26 +236,60 @@ namespace COMPortTest
 
                 try
                 {
+                    ContentBox.AppendText("     ->" + serialPort1.PortName + " Loopback Test\r\n");
+                    int TestBool = 0;
 
+                    ContentBox.AppendText("         (RTS-CTS Test)\r\n");
+
+                    serialPort1.RtsEnable = true;
+                    if (serialPort1.CtsHolding == true)
+                    {
+                        ContentBox.AppendText("             RTS-CTS: Pass\r\n");
+                        TestBool += 0;
+                    }
+                    else
+                    {
+                        ContentBox.AppendText("             RTS-CTS: Fail\r\n");
+                        TestBool += 1;
+                    }
+
+                    ContentBox.AppendText("         (DTR-CSR Test)\r\n");
+                    serialPort1.DtrEnable = true;
+                    if (serialPort1.CDHolding== true)
+                    {
+                        ContentBox.AppendText("             DTR-CSR: Pass\r\n");
+                        TestBool += 0;
+                    }
+                    else
+                    {
+                        ContentBox.AppendText("             DTR-DSR: Fail\r\n");
+                        TestBool += 1;
+                    }
+
+                    ContentBox.AppendText("         (TX-RX Test)\r\n");
                     serialPort1.Write("~!@#$%^&*()_+");
-                    ContentBox.AppendText("     ->" + serialPort1.PortName + " Test\r\n");
-                    ContentBox.AppendText("     Sleep 1 sec...\r\n");
-                    Thread.Sleep(1000);
+                    Thread.Sleep(100);
+                    //ContentBox.AppendText("     Sleep 1 sec...\r\n");
                     textBox25.Text = serialPort1.ReadExisting();
                     if (textBox25.Text == "~!@#$%^&*()_+")
                     {
-                        ContentBox.AppendText("     Result: Pass\r\n");
-                        return "Match";
+                        ContentBox.AppendText("             TX-RX: Pass\r\n");
+                        TestBool += 0;
+                        
                         
                     }
                     else 
                     {
-                        ContentBox.AppendText("     Result: Fail\r\n");
-                        return "Unmatch";
+                        ContentBox.AppendText("             TX-RX: Fail\r\n");
+                        TestBool += 1;
+                        
                         
                     }
+
+                    if (TestBool == 0) { return "Match"; }
+                    else { return "Unmatch"; }
                 }
-                catch { return "SE&RE Failed"; }
+                catch { return "Test Interrupt"; }
                 finally { textBox25.Text = ""; }
             }
 
