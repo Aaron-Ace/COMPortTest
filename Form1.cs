@@ -82,6 +82,7 @@ namespace COMPortTest
 
         private void Test_Click(object sender, EventArgs e)
         {
+            CleanPicBox();
             ContentBox.AppendText("   [Test Start]\r\n");
             Test.Enabled = false;
 
