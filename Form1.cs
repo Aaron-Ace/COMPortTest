@@ -31,19 +31,22 @@ namespace COMPortTest
 
             string str = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
             IniFile ini = new IniFile(str + "\\COMPortTest.ini");
-            if (ini.Read("COM1")  == "1") { checkBox1.Checked =  true; } else { checkBox1.Checked  = false; }
-            if (ini.Read("COM2")  == "1") { checkBox2.Checked =  true; } else { checkBox2.Checked  = false; }
-            if (ini.Read("COM3")  == "1") { checkBox3.Checked =  true; } else { checkBox3.Checked  = false; }
-            if (ini.Read("COM4")  == "1") { checkBox5.Checked =  true; } else { checkBox5.Checked  = false; }
-            if (ini.Read("COM5")  == "1") { checkBox4.Checked =  true; } else { checkBox4.Checked  = false; }
-            if (ini.Read("COM6")  == "1") { checkBox6.Checked =  true; } else { checkBox6.Checked  = false; }
-            if (ini.Read("COM7")  == "1") { checkBox7.Checked =  true; } else { checkBox7.Checked  = false; }
-            if (ini.Read("COM8")  == "1") { checkBox8.Checked =  true; } else { checkBox8.Checked  = false; }
-            if (ini.Read("COM9")  == "1") { checkBox9.Checked =  true; } else { checkBox9.Checked  = false; }
+            if (ini.Read("COM1") == "1") { checkBox1.Checked = true; } else { checkBox1.Checked = false; }
+            if (ini.Read("COM2") == "1") { checkBox2.Checked = true; } else { checkBox2.Checked = false; }
+            if (ini.Read("COM3") == "1") { checkBox3.Checked = true; } else { checkBox3.Checked = false; }
+            if (ini.Read("COM4") == "1") { checkBox5.Checked = true; } else { checkBox5.Checked = false; }
+            if (ini.Read("COM5") == "1") { checkBox4.Checked = true; } else { checkBox4.Checked = false; }
+            if (ini.Read("COM6") == "1") { checkBox6.Checked = true; } else { checkBox6.Checked = false; }
+            if (ini.Read("COM7") == "1") { checkBox7.Checked = true; } else { checkBox7.Checked = false; }
+            if (ini.Read("COM8") == "1") { checkBox8.Checked = true; } else { checkBox8.Checked = false; }
+            if (ini.Read("COM9") == "1") { checkBox9.Checked = true; } else { checkBox9.Checked = false; }
             if (ini.Read("COM10") == "1") { checkBox10.Checked = true; } else { checkBox10.Checked = false; }
             if (ini.Read("COM11") == "1") { checkBox11.Checked = true; } else { checkBox11.Checked = false; }
             if (ini.Read("COM12") == "1") { checkBox12.Checked = true; } else { checkBox12.Checked = false; }
-            if (ini.Read("AUTO")  == "1")
+            if (ini.Read("BaudRate") == "-1") { comboBox1.SelectedIndex = 0; }
+            else if (ini.Read("BaudRate") == "") { ini.Write("BaudRate", "0"); }
+            else { comboBox1.SelectedIndex = int.Parse(ini.Read("BaudRate")); }
+            if (ini.Read("AUTO") == "1")
             {
                 checkBox13.Checked = true;
                 ContentBox.AppendText("   [Auto Test]\r\n");
@@ -55,19 +58,20 @@ namespace COMPortTest
         {
             string str1 = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
             IniFile ini = new IniFile(str1 + "\\COMPortTest.ini");
-            if (checkBox1.Checked  == true) { ini.Write("COM1", "1");  } else { ini.Write("COM1", "0"); }
-            if (checkBox2.Checked  == true) { ini.Write("COM2", "1");  } else { ini.Write("COM2", "0"); }
-            if (checkBox3.Checked  == true) { ini.Write("COM3", "1");  } else { ini.Write("COM3", "0"); }
-            if (checkBox5.Checked  == true) { ini.Write("COM4", "1");  } else { ini.Write("COM4", "0"); }
-            if (checkBox4.Checked  == true) { ini.Write("COM5", "1");  } else { ini.Write("COM5", "0"); }
-            if (checkBox6.Checked  == true) { ini.Write("COM6", "1");  } else { ini.Write("COM6", "0"); }
-            if (checkBox7.Checked  == true) { ini.Write("COM7", "1");  } else { ini.Write("COM7", "0"); }
-            if (checkBox8.Checked  == true) { ini.Write("COM8", "1");  } else { ini.Write("COM8", "0"); }
-            if (checkBox9.Checked  == true) { ini.Write("COM9", "1");  } else { ini.Write("COM9", "0"); }
-            if (checkBox10.Checked == true) { ini.Write("COM10", "1"); } else { ini.Write("COM10","0"); }
-            if (checkBox11.Checked == true) { ini.Write("COM11", "1"); } else { ini.Write("COM11","0"); }
-            if (checkBox12.Checked == true) { ini.Write("COM12", "1"); } else { ini.Write("COM12","0"); }
-            if (checkBox13.Checked == true) { ini.Write("AUTO", "1");  } else { ini.Write("AUTO", "0"); }
+            if (checkBox1.Checked == true) { ini.Write("COM1", "1"); } else { ini.Write("COM1", "0"); }
+            if (checkBox2.Checked == true) { ini.Write("COM2", "1"); } else { ini.Write("COM2", "0"); }
+            if (checkBox3.Checked == true) { ini.Write("COM3", "1"); } else { ini.Write("COM3", "0"); }
+            if (checkBox5.Checked == true) { ini.Write("COM4", "1"); } else { ini.Write("COM4", "0"); }
+            if (checkBox4.Checked == true) { ini.Write("COM5", "1"); } else { ini.Write("COM5", "0"); }
+            if (checkBox6.Checked == true) { ini.Write("COM6", "1"); } else { ini.Write("COM6", "0"); }
+            if (checkBox7.Checked == true) { ini.Write("COM7", "1"); } else { ini.Write("COM7", "0"); }
+            if (checkBox8.Checked == true) { ini.Write("COM8", "1"); } else { ini.Write("COM8", "0"); }
+            if (checkBox9.Checked == true) { ini.Write("COM9", "1"); } else { ini.Write("COM9", "0"); }
+            if (checkBox10.Checked == true) { ini.Write("COM10", "1"); } else { ini.Write("COM10", "0"); }
+            if (checkBox11.Checked == true) { ini.Write("COM11", "1"); } else { ini.Write("COM11", "0"); }
+            if (checkBox12.Checked == true) { ini.Write("COM12", "1"); } else { ini.Write("COM12", "0"); }
+            if (checkBox13.Checked == true) { ini.Write("AUTO", "1"); } else { ini.Write("AUTO", "0"); }
+            ini.Write("BaudRate", comboBox1.SelectedIndex.ToString());
             ContentBox.AppendText("   Saved test configuration\r\n");
         }
 
@@ -87,15 +91,15 @@ namespace COMPortTest
 
             //Test whether checkBox check or not
             int[] CheckBoxBool = new int[13];
-            if (checkBox1.Checked)  { CheckBoxBool[1] = 1;  } else { CheckBoxBool[1]  = 0; }
-            if (checkBox2.Checked)  { CheckBoxBool[2] = 1;  } else { CheckBoxBool[2]  = 0; }
-            if (checkBox3.Checked)  { CheckBoxBool[3] = 1;  } else { CheckBoxBool[3]  = 0; }
-            if (checkBox4.Checked)  { CheckBoxBool[4] = 1;  } else { CheckBoxBool[4]  = 0; }
-            if (checkBox5.Checked)  { CheckBoxBool[5] = 1;  } else { CheckBoxBool[5]  = 0; }
-            if (checkBox6.Checked)  { CheckBoxBool[6] = 1;  } else { CheckBoxBool[6]  = 0; }
-            if (checkBox7.Checked)  { CheckBoxBool[7] = 1;  } else { CheckBoxBool[7]  = 0; }
-            if (checkBox8.Checked)  { CheckBoxBool[8] = 1;  } else { CheckBoxBool[8]  = 0; }
-            if (checkBox9.Checked)  { CheckBoxBool[9] = 1;  } else { CheckBoxBool[9]  = 0; }
+            if (checkBox1.Checked) { CheckBoxBool[1] = 1; } else { CheckBoxBool[1] = 0; }
+            if (checkBox2.Checked) { CheckBoxBool[2] = 1; } else { CheckBoxBool[2] = 0; }
+            if (checkBox3.Checked) { CheckBoxBool[3] = 1; } else { CheckBoxBool[3] = 0; }
+            if (checkBox4.Checked) { CheckBoxBool[4] = 1; } else { CheckBoxBool[4] = 0; }
+            if (checkBox5.Checked) { CheckBoxBool[5] = 1; } else { CheckBoxBool[5] = 0; }
+            if (checkBox6.Checked) { CheckBoxBool[6] = 1; } else { CheckBoxBool[6] = 0; }
+            if (checkBox7.Checked) { CheckBoxBool[7] = 1; } else { CheckBoxBool[7] = 0; }
+            if (checkBox8.Checked) { CheckBoxBool[8] = 1; } else { CheckBoxBool[8] = 0; }
+            if (checkBox9.Checked) { CheckBoxBool[9] = 1; } else { CheckBoxBool[9] = 0; }
             if (checkBox10.Checked) { CheckBoxBool[10] = 1; } else { CheckBoxBool[10] = 0; }
             if (checkBox11.Checked) { CheckBoxBool[11] = 1; } else { CheckBoxBool[11] = 0; }
             if (checkBox12.Checked) { CheckBoxBool[12] = 1; } else { CheckBoxBool[12] = 0; }
@@ -108,7 +112,7 @@ namespace COMPortTest
                 //如果CheckBox有被勾選 
                 if (CheckBoxBool[i] == 1)
                 {
-                    
+
                     flag_testcheck = 1;
                     //Test 預設值為錯誤
                     bool test = false;
@@ -116,18 +120,18 @@ namespace COMPortTest
                     switch (i)
                     {
 
-                        case 1:  textBox13.Text = COMSendReceiveMessageCheck("COM1").ToString(); str = textBox13.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 2:  textBox14.Text = COMSendReceiveMessageCheck("COM2").ToString(); str = textBox14.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 3:  textBox15.Text = COMSendReceiveMessageCheck("COM3").ToString(); str = textBox15.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 4:  textBox16.Text = COMSendReceiveMessageCheck("COM4").ToString(); str = textBox16.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 5:  textBox17.Text = COMSendReceiveMessageCheck("COM5").ToString(); str = textBox17.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 6:  textBox18.Text = COMSendReceiveMessageCheck("COM6").ToString(); str = textBox18.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 7:  textBox19.Text = COMSendReceiveMessageCheck("COM7").ToString(); str = textBox19.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 8:  textBox20.Text = COMSendReceiveMessageCheck("COM8").ToString(); str = textBox20.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 9:  textBox21.Text = COMSendReceiveMessageCheck("COM9").ToString(); str = textBox21.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 10: textBox22.Text = COMSendReceiveMessageCheck("COM10").ToString(); str = textBox22.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 11: textBox23.Text = COMSendReceiveMessageCheck("COM11").ToString(); str = textBox23.Text.ToString(); if (str == "Match") { test = true; } break;
-                        case 12: textBox24.Text = COMSendReceiveMessageCheck("COM12").ToString(); str = textBox24.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 1: textBox13.Text = PinTest("COM1").ToString(); str = textBox13.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 2: textBox14.Text = PinTest("COM2").ToString(); str = textBox14.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 3: textBox15.Text = PinTest("COM3").ToString(); str = textBox15.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 4: textBox16.Text = PinTest("COM4").ToString(); str = textBox16.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 5: textBox17.Text = PinTest("COM5").ToString(); str = textBox17.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 6: textBox18.Text = PinTest("COM6").ToString(); str = textBox18.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 7: textBox19.Text = PinTest("COM7").ToString(); str = textBox19.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 8: textBox20.Text = PinTest("COM8").ToString(); str = textBox20.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 9: textBox21.Text = PinTest("COM9").ToString(); str = textBox21.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 10: textBox22.Text = PinTest("COM10").ToString(); str = textBox22.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 11: textBox23.Text = PinTest("COM11").ToString(); str = textBox23.Text.ToString(); if (str == "Match") { test = true; } break;
+                        case 12: textBox24.Text = PinTest("COM12").ToString(); str = textBox24.Text.ToString(); if (str == "Match") { test = true; } break;
                     }
 
                     //Test為是 更改圖片為成功
@@ -135,15 +139,15 @@ namespace COMPortTest
                     {
                         switch (i)
                         {
-                            case 1:  pictureBox1.Image =  Properties.Resources.bmp00006; break;
-                            case 2:  pictureBox2.Image =  Properties.Resources.bmp00006; break;
-                            case 3:  pictureBox3.Image =  Properties.Resources.bmp00006; break;
-                            case 4:  pictureBox4.Image =  Properties.Resources.bmp00006; break;
-                            case 5:  pictureBox5.Image =  Properties.Resources.bmp00006; break;
-                            case 6:  pictureBox6.Image =  Properties.Resources.bmp00006; break;
-                            case 7:  pictureBox7.Image =  Properties.Resources.bmp00006; break;
-                            case 8:  pictureBox8.Image =  Properties.Resources.bmp00006; break;
-                            case 9:  pictureBox9.Image =  Properties.Resources.bmp00006; break;
+                            case 1: pictureBox1.Image = Properties.Resources.bmp00006; break;
+                            case 2: pictureBox2.Image = Properties.Resources.bmp00006; break;
+                            case 3: pictureBox3.Image = Properties.Resources.bmp00006; break;
+                            case 4: pictureBox4.Image = Properties.Resources.bmp00006; break;
+                            case 5: pictureBox5.Image = Properties.Resources.bmp00006; break;
+                            case 6: pictureBox6.Image = Properties.Resources.bmp00006; break;
+                            case 7: pictureBox7.Image = Properties.Resources.bmp00006; break;
+                            case 8: pictureBox8.Image = Properties.Resources.bmp00006; break;
+                            case 9: pictureBox9.Image = Properties.Resources.bmp00006; break;
                             case 10: pictureBox10.Image = Properties.Resources.bmp00006; break;
                             case 11: pictureBox11.Image = Properties.Resources.bmp00006; break;
                             case 12: pictureBox12.Image = Properties.Resources.bmp00006; break;
@@ -155,15 +159,15 @@ namespace COMPortTest
                     {
                         switch (i)
                         {
-                            case 1:  pictureBox1.Image  = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
-                            case 2:  pictureBox2.Image  = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
-                            case 3:  pictureBox3.Image  = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
-                            case 4:  pictureBox4.Image  = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
-                            case 5:  pictureBox5.Image  = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
-                            case 6:  pictureBox6.Image  = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
-                            case 7:  pictureBox7.Image  = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
-                            case 8:  pictureBox8.Image  = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
-                            case 9:  pictureBox9.Image  = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
+                            case 1: pictureBox1.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
+                            case 2: pictureBox2.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
+                            case 3: pictureBox3.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
+                            case 4: pictureBox4.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
+                            case 5: pictureBox5.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
+                            case 6: pictureBox6.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
+                            case 7: pictureBox7.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
+                            case 8: pictureBox8.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
+                            case 9: pictureBox9.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
                             case 10: pictureBox10.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
                             case 11: pictureBox11.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
                             case 12: pictureBox12.Image = Properties.Resources.bmp00005; GlobalVarable.log_flag = 1; break;
@@ -201,23 +205,26 @@ namespace COMPortTest
             IniFile ini = new IniFile(str1 + "\\COMPortTest.ini");
             if (GlobalVarable.log_flag == 0 && ini.Read("AUTO") == "1")
             { timer1.Start(); timer1_Tick(sender, e); }
-            
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (serialPort1.IsOpen){serialPort1.Close();}
-            if (GlobalVarable.log_flag == 0) 
-                { Environment.ExitCode = 0; }
+            if (serialPort1.IsOpen) { serialPort1.Close(); }
+            if (GlobalVarable.log_flag == 0)
+            { Environment.ExitCode = 0; }
             else { Environment.ExitCode = 1; }
         }
 
-        public string COMSendReceiveMessageCheck(string name)
+        public string PinTest(string name)
         {
             serialPort1.Close();
             serialPort1.PortName = name;
             serialPort1.Parity = Parity.None;
-            serialPort1.BaudRate = 9600;
+
+            serialPort1.BaudRate = int.Parse(comboBox1.Text.ToString());
+            //ContentBox.AppendText(comboBox1.SelectedIndex+"****");
+            //ContentBox.AppendText(comboBox1.Text+"****");
             serialPort1.DataBits = 8;
             serialPort1.StopBits = StopBits.One;
 
@@ -227,8 +234,8 @@ namespace COMPortTest
             }
             catch (Exception)
             {
-                ContentBox.AppendText("     ->"+serialPort1.PortName.ToString() + " \r\n     Can Not Be Opened\r\n");
-                ContentBox.AppendText("     Result: Fail\r\n");
+                ContentBox.AppendText("     ->" + serialPort1.PortName.ToString() + " \r\n        Can Not Be Opened\r\n");
+                //ContentBox.AppendText("     Result: Fail\r\n");
             }
 
             if (serialPort1.IsOpen)
@@ -239,51 +246,51 @@ namespace COMPortTest
                     ContentBox.AppendText("     ->" + serialPort1.PortName + " Loopback Test\r\n");
                     int TestBool = 0;
 
-                    ContentBox.AppendText("         (RTS-CTS Test)\r\n");
+                    //ContentBox.AppendText("         (RTS-CTS Test)\r\n");
 
                     serialPort1.RtsEnable = true;
                     if (serialPort1.CtsHolding == true)
                     {
-                        ContentBox.AppendText("             RTS-CTS: Pass\r\n");
+                        ContentBox.AppendText("         RTS-CTS: Pass\r\n");
                         TestBool += 0;
                     }
                     else
                     {
-                        ContentBox.AppendText("             RTS-CTS: Fail\r\n");
+                        ContentBox.AppendText("         RTS-CTS: Fail\r\n");
                         TestBool += 1;
                     }
 
-                    ContentBox.AppendText("         (DTR-CSR Test)\r\n");
+                    //ContentBox.AppendText("         (DTR-DSR Test)\r\n");
                     serialPort1.DtrEnable = true;
-                    if (serialPort1.CDHolding== true)
+                    if (serialPort1.DsrHolding == true)
                     {
-                        ContentBox.AppendText("             DTR-CSR: Pass\r\n");
+                        ContentBox.AppendText("         DTR-DSR: Pass\r\n");
                         TestBool += 0;
                     }
                     else
                     {
-                        ContentBox.AppendText("             DTR-DSR: Fail\r\n");
+                        ContentBox.AppendText("         DTR-DSR: Fail\r\n");
                         TestBool += 1;
                     }
 
-                    ContentBox.AppendText("         (TX-RX Test)\r\n");
+                    //ContentBox.AppendText("         (TX-RX Test)\r\n");
                     serialPort1.Write("~!@#$%^&*()_+");
                     Thread.Sleep(100);
                     //ContentBox.AppendText("     Sleep 1 sec...\r\n");
                     textBox25.Text = serialPort1.ReadExisting();
                     if (textBox25.Text == "~!@#$%^&*()_+")
                     {
-                        ContentBox.AppendText("             TX-RX: Pass\r\n");
+                        ContentBox.AppendText("         TX-RX: Pass\r\n");
                         TestBool += 0;
-                        
-                        
+
+
                     }
-                    else 
+                    else
                     {
-                        ContentBox.AppendText("             TX-RX: Fail\r\n");
+                        ContentBox.AppendText("         TX-RX: Fail\r\n");
                         TestBool += 1;
-                        
-                        
+
+
                     }
 
                     if (TestBool == 0) { return "Match"; }
@@ -299,7 +306,7 @@ namespace COMPortTest
             }
 
             return "Test Failed";
-            
+
         }
 
         public class IniFile   // revision 11
@@ -428,6 +435,7 @@ namespace COMPortTest
                 rk2.Close();
                 rk.Close();
 
+                /*
                 //寫入ini檔為true 
                 string str = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
                 IniFile ini = new IniFile(str + "\\COMPortTest.ini");
@@ -444,6 +452,8 @@ namespace COMPortTest
                 if (checkBox10.Checked == true) { ini.Write("COM10", "1"); } else { ini.Write("COM10", "0"); }
                 if (checkBox11.Checked == true) { ini.Write("COM11", "1"); } else { ini.Write("COM11", "0"); }
                 if (checkBox12.Checked == true) { ini.Write("COM12", "1"); } else { ini.Write("COM12", "0"); }
+                ini.Write("BaudRate", comboBox1.SelectedIndex.ToString());
+                 * */
 
             }
             else //取消開機自啟動  

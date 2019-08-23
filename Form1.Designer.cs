@@ -89,6 +89,8 @@
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -616,16 +618,16 @@
             this.groupBox2.Controls.Add(this.Test);
             this.groupBox2.Controls.Add(this.ContentBox);
             this.groupBox2.Controls.Add(this.textBox25);
-            this.groupBox2.Location = new System.Drawing.Point(13, 204);
+            this.groupBox2.Location = new System.Drawing.Point(12, 233);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(744, 245);
+            this.groupBox2.Size = new System.Drawing.Size(744, 354);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CONTENT";
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(661, 136);
+            this.Clear.Location = new System.Drawing.Point(661, 242);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(58, 26);
             this.Clear.TabIndex = 66;
@@ -637,7 +639,7 @@
             // 
             this.pictureBox13.Image = global::COMPortTest.Properties.Resources.bmpLogo;
             this.pictureBox13.InitialImage = null;
-            this.pictureBox13.Location = new System.Drawing.Point(647, 211);
+            this.pictureBox13.Location = new System.Drawing.Point(647, 317);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(87, 28);
             this.pictureBox13.TabIndex = 65;
@@ -645,7 +647,7 @@
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(660, 99);
+            this.Save.Location = new System.Drawing.Point(660, 205);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(59, 26);
             this.Save.TabIndex = 64;
@@ -666,7 +668,7 @@
             // 
             // Test
             // 
-            this.Test.Location = new System.Drawing.Point(660, 171);
+            this.Test.Location = new System.Drawing.Point(660, 277);
             this.Test.Name = "Test";
             this.Test.Size = new System.Drawing.Size(58, 26);
             this.Test.TabIndex = 61;
@@ -679,7 +681,7 @@
             this.ContentBox.Location = new System.Drawing.Point(22, 24);
             this.ContentBox.Multiline = true;
             this.ContentBox.Name = "ContentBox";
-            this.ContentBox.Size = new System.Drawing.Size(607, 213);
+            this.ContentBox.Size = new System.Drawing.Size(607, 324);
             this.ContentBox.TabIndex = 0;
             // 
             // textBox25
@@ -694,11 +696,36 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "9600",
+            "38400",
+            "115200"});
+            this.comboBox1.Location = new System.Drawing.Point(616, 204);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 25);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("PMingLiU", 10F);
+            this.label1.Location = new System.Drawing.Point(533, 207);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "BaudRate";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 455);
+            this.ClientSize = new System.Drawing.Size(772, 599);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -723,6 +750,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -787,6 +815,8 @@
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
