@@ -160,7 +160,7 @@
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Location = new System.Drawing.Point(13, 7);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(744, 191);
+            this.groupBox1.Size = new System.Drawing.Size(743, 191);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "COM PORT";
@@ -374,6 +374,7 @@
             this.textBox12.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox12.Location = new System.Drawing.Point(479, 154);
             this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(175, 27);
             this.textBox12.TabIndex = 23;
             this.textBox12.Text = "Status:";
@@ -383,6 +384,7 @@
             this.textBox11.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox11.Location = new System.Drawing.Point(479, 128);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(175, 27);
             this.textBox11.TabIndex = 22;
             this.textBox11.Text = "Status:";
@@ -392,6 +394,7 @@
             this.textBox10.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox10.Location = new System.Drawing.Point(479, 102);
             this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(175, 27);
             this.textBox10.TabIndex = 21;
             this.textBox10.Text = "Status:";
@@ -401,6 +404,7 @@
             this.textBox9.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox9.Location = new System.Drawing.Point(479, 76);
             this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(175, 27);
             this.textBox9.TabIndex = 20;
             this.textBox9.Text = "Status:";
@@ -410,6 +414,7 @@
             this.textBox8.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox8.Location = new System.Drawing.Point(479, 50);
             this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(175, 27);
             this.textBox8.TabIndex = 19;
             this.textBox8.Text = "Status:";
@@ -419,6 +424,7 @@
             this.textBox7.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox7.Location = new System.Drawing.Point(479, 24);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(175, 27);
             this.textBox7.TabIndex = 18;
             this.textBox7.Text = "Status:";
@@ -428,6 +434,7 @@
             this.textBox6.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox6.Location = new System.Drawing.Point(114, 153);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(178, 27);
             this.textBox6.TabIndex = 17;
             this.textBox6.Text = "Status:";
@@ -437,6 +444,7 @@
             this.textBox5.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox5.Location = new System.Drawing.Point(114, 127);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(178, 27);
             this.textBox5.TabIndex = 16;
             this.textBox5.Text = "Status:";
@@ -446,6 +454,7 @@
             this.textBox4.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox4.Location = new System.Drawing.Point(114, 101);
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(178, 27);
             this.textBox4.TabIndex = 15;
             this.textBox4.Text = "Status:";
@@ -455,6 +464,7 @@
             this.textBox3.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox3.Location = new System.Drawing.Point(114, 75);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(178, 27);
             this.textBox3.TabIndex = 14;
             this.textBox3.Text = "Status:";
@@ -464,6 +474,7 @@
             this.textBox2.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox2.Location = new System.Drawing.Point(114, 49);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(178, 27);
             this.textBox2.TabIndex = 13;
             this.textBox2.Text = "Status:";
@@ -473,6 +484,7 @@
             this.textBox1.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.textBox1.Location = new System.Drawing.Point(114, 23);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(178, 27);
             this.textBox1.TabIndex = 12;
             this.textBox1.Text = "Status:";
@@ -627,7 +639,7 @@
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(661, 242);
+            this.Clear.Location = new System.Drawing.Point(653, 242);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(58, 26);
             this.Clear.TabIndex = 66;
@@ -639,7 +651,7 @@
             // 
             this.pictureBox13.Image = global::COMPortTest.Properties.Resources.bmpLogo;
             this.pictureBox13.InitialImage = null;
-            this.pictureBox13.Location = new System.Drawing.Point(647, 317);
+            this.pictureBox13.Location = new System.Drawing.Point(639, 317);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(87, 28);
             this.pictureBox13.TabIndex = 65;
@@ -647,7 +659,7 @@
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(660, 205);
+            this.Save.Location = new System.Drawing.Point(652, 205);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(59, 26);
             this.Save.TabIndex = 64;
@@ -658,7 +670,7 @@
             // checkBox13
             // 
             this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(661, 24);
+            this.checkBox13.Location = new System.Drawing.Point(653, 24);
             this.checkBox13.Name = "checkBox13";
             this.checkBox13.Size = new System.Drawing.Size(68, 19);
             this.checkBox13.TabIndex = 63;
@@ -668,7 +680,7 @@
             // 
             // Test
             // 
-            this.Test.Location = new System.Drawing.Point(660, 277);
+            this.Test.Location = new System.Drawing.Point(652, 277);
             this.Test.Name = "Test";
             this.Test.Size = new System.Drawing.Size(58, 26);
             this.Test.TabIndex = 61;
@@ -704,7 +716,7 @@
             "9600",
             "38400",
             "115200"});
-            this.comboBox1.Location = new System.Drawing.Point(616, 204);
+            this.comboBox1.Location = new System.Drawing.Point(608, 204);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 25);
             this.comboBox1.TabIndex = 2;
@@ -713,7 +725,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("PMingLiU", 10F);
-            this.label1.Location = new System.Drawing.Point(533, 207);
+            this.label1.Location = new System.Drawing.Point(525, 207);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 17);
             this.label1.TabIndex = 3;

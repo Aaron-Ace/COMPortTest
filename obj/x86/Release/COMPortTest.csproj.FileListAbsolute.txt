@@ -1,0 +1,7 @@
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\bin\Release\COMPortTest.exe
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\bin\Release\COMPortTest.pdb
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Release\COMPortTest.Form1.resources
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Release\COMPortTest.Properties.Resources.resources
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Release\COMPortTest.csproj.GenerateResource.Cache
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Release\COMPortTest.exe
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Release\COMPortTest.pdb

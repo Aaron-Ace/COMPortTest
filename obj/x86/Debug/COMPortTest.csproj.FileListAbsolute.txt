@@ -6,3 +6,11 @@ D:\Users\user\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPo
 D:\Users\user\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.exe
 D:\Users\user\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.pdb
 D:\Users\user\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.csprojResolveAssemblyReference.cache
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.exe
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.pdb
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\bin\Debug\COMPortTest.exe
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\bin\Debug\COMPortTest.pdb
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.csprojResolveAssemblyReference.cache
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.Form1.resources
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.Properties.Resources.resources
+D:\Users\文件\Visual Studio 2010\Projects\COMPortTest\obj\x86\Debug\COMPortTest.csproj.GenerateResource.Cache

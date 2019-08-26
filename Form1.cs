@@ -83,6 +83,9 @@ namespace COMPortTest
         private void Test_Click(object sender, EventArgs e)
         {
             CleanPicBox();
+            CleanTextBox();
+            GlobalVarable.log_flag = 0;
+            
             ContentBox.AppendText("   [Test Start]\r\n");
             Test.Enabled = false;
 
@@ -422,6 +425,22 @@ namespace COMPortTest
             pictureBox12.Image = Properties.Resources.bmp00002;
         }
 
+        public void CleanTextBox()
+        {
+            textBox13.Clear();
+            textBox14.Clear();
+            textBox15.Clear();
+            textBox16.Clear();
+            textBox17.Clear();
+            textBox18.Clear();
+            textBox19.Clear();
+            textBox20.Clear();
+            textBox21.Clear();
+            textBox22.Clear();
+            textBox23.Clear(); 
+            textBox24.Clear();
+        }
+
 
         private void checkBox13_CheckedChanged(object sender, EventArgs e)
         {
@@ -473,7 +492,7 @@ namespace COMPortTest
             }
         }
 
-        int timeLeft = 5;
+        int timeLeft = 3;
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (checkBox13.Checked == false)
